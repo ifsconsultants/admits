@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Data</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Admission Data</h1>
+        
+        <div class="glass-card">
+            <div class="tabs">
+                <button class="tab active" data-tab="fall2024">Fall 2024 Admits</button>
+                <button class="tab" data-tab="fall2025">Fall 2025 Admits</button>
+            </div>
+            
+            <div id="fall2024" class="tab-content active">
+                <div class="filter-container">
+                    <input type="text" class="filter-input" data-column="0" placeholder="Filter by Name">
+                    <input type="text" class="filter-input" data-column="1" placeholder="Filter by College">
+                    <input type="text" class="filter-input" data-column="2" placeholder="Filter by Year of Passout">
+                    <input type="text" class="filter-input" data-column="3" placeholder="Filter by Program">
+                    <input type="text" class="filter-input" data-column="4" placeholder="Filter by University">
+                    <input type="text" class="filter-input" data-column="5" placeholder="Filter by Scholarship">
+                    <input type="text" class="filter-input" data-column="6" placeholder="Filter by Rank">
+                </div>
+                <div class="data-table-container">
+                    <table id="table2024">
+                        <thead>
+                            <tr>
+                                <th class="filterable">Student Name</th>
+                                <th class="filterable">College</th>
+                                <th class="filterable">Year of Passout</th>
+                                <th class="filterable">Program</th>
+                                <th class="filterable">University</th>
+                                <th class="filterable">Scholarship</th>
+                                <th class="filterable">Rank</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Data will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div id="fall2025" class="tab-content">
+                <div class="filter-container">
+                    <input type="text" class="filter-input" data-column="0" placeholder="Filter by Name">
+                    <input type="text" class="filter-input" data-column="1" placeholder="Filter by College">
+                    <input type="text" class="filter-input" data-column="2" placeholder="Filter by Year of Passout">
+                    <input type="text" class="filter-input" data-column="3" placeholder="Filter by Program">
+                    <input type="text" class="filter-input" data-column="4" placeholder="Filter by University">
+                    <input type="text" class="filter-input" data-column="5" placeholder="Filter by Scholarship">
+                    <input type="text" class="filter-input" data-column="6" placeholder="Filter by Rank">
+                </div>
+                <div class="data-table-container">
+                    <table id="table2025">
+                        <thead>
+                            <tr>
+                                <th class="filterable">Student Name</th>
+                                <th class="filterable">College</th>
+                                <th class="filterable">Year of Passout</th>
+                                <th class="filterable">Program</th>
+                                <th class="filterable">University</th>
+                                <th class="filterable">Scholarship</th>
+                                <th class="filterable">Rank</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Data will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
